@@ -1,10 +1,10 @@
 """
-0x01. [程式能力] 請用 Python 實作數學運算字 parser ，並計算其結果。
+[程式能力] 請用 Python 實作數學運算字 parser ，並計算其結果。
 例： a = "(2+3) * 2"，要得到 10 。
 """
 
 
-def parse_and_calc(a: str):
+def parser(a: str):
     stack = []
     a += "+"
     operator = "+"
@@ -37,7 +37,7 @@ def parse_and_calc(a: str):
                 if cnt == 0:
                     break
                 j += 1
-            current_number = parse_and_calc(a[index + 1 : j + 1])
+            current_number = parser(a[index + 1 : j + 1])
             index = j
         index += 1
     return sum(stack)
@@ -45,4 +45,4 @@ def parse_and_calc(a: str):
 
 if __name__ == "__main__":
     a = "(2+3) * 2"
-    assert parse_and_calc(a) == 10
+    assert parser(a) == 10
