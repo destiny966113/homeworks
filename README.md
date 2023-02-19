@@ -1,10 +1,10 @@
 完成時間2週。 (截止日期 0203-02-22)
 
 TODO (prerequisites)
-[x] 申請並設定 Google Cloud Free Trial Account (90天)
-[x] 設定相關 API 存取權限與 credential
-[x] 完成 GA4 關聯帳號存取權限設定
-[x] 記錄 google analytics property id
+- [x] 申請並設定 Google Cloud Free Trial Account (90天)
+- [x] 設定相關 API 存取權限與 credential
+- [x] 完成 GA4 關聯帳號存取權限設定
+- [x] 記錄 google analytics property id
 
 ## 請參考 coding.py
 [程式能力] 請用 Python 實作數學運算字 parser ，並計算其結果。
